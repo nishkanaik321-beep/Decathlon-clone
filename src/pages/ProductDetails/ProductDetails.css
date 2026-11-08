@@ -1,0 +1,144 @@
+.crumbs {
+  padding: 14px 24px;
+  font-size: 13px;
+  color: #666;
+}
+
+.crumbs a:hover {
+  color: var(--blue);
+}
+
+.pd {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 40px;
+  padding: 8px 24px 32px;
+  align-items: start;
+}
+
+.pd-main {
+  aspect-ratio: 1/1;
+  max-height: 520px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 160px;
+}
+
+.pd-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pd-thumbs {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pd-thumbs button {
+  width: 76px;
+  height: 76px;
+  font-size: 34px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.pd-thumbs button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pd-thumbs .on {
+  border-color: var(--blue);
+}
+
+.pd-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pd-info h1 {
+  font-size: 28px;
+  line-height: 1.25;
+}
+
+.pd-info h4 {
+  margin-top: 10px;
+}
+
+.pd-rating {
+  color: inherit;
+}
+
+.pd-rating:hover {
+  text-decoration: underline;
+}
+
+.pd-price b {
+  font-size: 30px;
+}
+
+.pd-price .mrp {
+  color: #666;
+}
+
+.tax {
+  color: #777;
+}
+
+.pd-noprice {
+  color: #555;
+  margin: 6px 0;
+}
+
+.pd-desc {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.pd-sizes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pd-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.ok {
+  color: var(--green);
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.pd-specs {
+  border-collapse: collapse;
+}
+
+.pd-specs td {
+  padding: 6px 24px 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.pd-specs td:first-child {
+  color: #555;
+}
+
+@media (max-width: 800px) {
+  .pd {
+    grid-template-columns: 1fr;
+  }
+  .pd-main {
+    font-size: 110px;
+  }
+  .pd-info h1 {
+    font-size: 22px;
+  }
+}

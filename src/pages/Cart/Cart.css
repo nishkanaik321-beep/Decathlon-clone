@@ -1,0 +1,15 @@
+.cart {
+  padding-top: 20px;
+}
+
+.crow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cart h3 {
+  margin-top: 16px;
+}

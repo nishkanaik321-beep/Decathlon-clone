@@ -1,0 +1,109 @@
+:root {
+  --blue: #0082c3;
+  --dark: #101010;
+  --grey: #f2f2f2;
+  --line: #e1e1e1;
+  --green: #007a3d;
+  --star: #f5a623;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.pg {
+  padding: 0 24px;
+}
+
+.pg-title {
+  padding: 20px 24px 8px;
+  font-size: 22px;
+}
+
+.btn {
+  background: var(--blue);
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.btn.ghost {
+  background: #fff;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.chip {
+  border: 1px solid #999;
+  background: #fff;
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin: 0 6px 6px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.chip.on {
+  background: var(--blue);
+  color: #fff;
+  border-color: var(--blue);
+}
+
+.brand {
+  color: #666;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .4px;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.price-row b {
+  font-size: 20px;
+}
+
+.price-row s {
+  color: #777;
+  font-size: 14px;
+}
+
+.price-row .off {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.rating-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}

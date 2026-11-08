@@ -1,0 +1,33 @@
+.listing {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 24px;
+  padding: 20px 24px;
+}
+
+.side h4 {
+  margin: 16px 0 8px;
+}
+
+.side label {
+  display: block;
+  margin: 6px 0;
+}
+
+.sortbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sortbar select {
+  padding: 7px;
+  border-radius: 6px;
+}
+
+@media (max-width: 800px) {
+  .listing {
+    grid-template-columns: 1fr;
+  }
+}

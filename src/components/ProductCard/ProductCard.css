@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  border: 1px solid var(--line);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin: 2px 0;
+  font-weight: 600;
+  min-height: 38px;
+  line-height: 1.3;
+}
+
+.card a {
+  min-width: 0;
+}
+
+.card a img {
+  width: 100%;
+  height: 170px;
+  display: block;
+  object-fit: contain;
+  background: #fff;
+}
+
+.card .img {
+  height: 170px;
+  display: grid;
+  place-items: center;
+  font-size: 72px;
+}
+
+.card .btn {
+  margin-top: auto;
+}
+
+.heart {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  border: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.heart.on {
+  color: #d0021b;
+}

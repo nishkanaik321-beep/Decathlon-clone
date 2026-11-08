@@ -1,0 +1,153 @@
+.reviews {
+  padding: 32px 24px;
+  border-top: 8px solid var(--grey);
+}
+
+.reviews>h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.rv-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.rv-avg b {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.rv-avg span {
+  font-size: 20px;
+  color: #666;
+}
+
+.rv-count {
+  margin: 6px 0 2px;
+  font-weight: 600;
+}
+
+.rv-rec {
+  margin: 0 0 16px;
+  color: #444;
+  font-size: 14px;
+}
+
+.rv-bar {
+  display: grid;
+  grid-template-columns: 40px 1fr 44px;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: 0;
+  padding: 5px 4px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+.rv-bar:hover,
+.rv-bar.on {
+  background: var(--grey);
+}
+
+.rv-bar span:last-child {
+  text-align: right;
+  color: #555;
+}
+
+.rv-bar i,
+.rv-attr i {
+  background: var(--line);
+  height: 8px;
+  border-radius: 4px;
+  display: block;
+}
+
+.rv-bar em,
+.rv-attr em {
+  display: block;
+  height: 100%;
+  background: var(--dark);
+  border-radius: 4px;
+}
+
+.rv-attrs {
+  margin-top: 24px;
+}
+
+.rv-attrs h4 {
+  margin-bottom: 10px;
+}
+
+.rv-attr {
+  display: grid;
+  grid-template-columns: 1fr 90px 30px;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.rv-tools {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 6px;
+}
+
+.rv-tools label {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.rv-tools select {
+  padding: 7px;
+  border-radius: 6px;
+  border: 1px solid #999;
+}
+
+.rv-card {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.rv-head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.rv-head small {
+  color: #777;
+  margin-left: auto;
+}
+
+.rv-card h4 {
+  margin: 8px 0 4px;
+  font-size: 16px;
+}
+
+.rv-card p {
+  margin: 4px 0;
+  line-height: 1.5;
+  color: #222;
+}
+
+.rv-list>.btn {
+  margin-top: 18px;
+}
+
+@media (max-width: 800px) {
+  .rv-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
